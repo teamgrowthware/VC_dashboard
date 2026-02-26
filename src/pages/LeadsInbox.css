@@ -1,0 +1,38 @@
+.lead-item {
+  padding: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.2s;
+  margin-bottom: 8px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.lead-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.lead-item.active {
+  background: rgba(0, 240, 255, 0.05);
+  border-color: var(--cyan-glow);
+  box-shadow: inset 4px 0 0 var(--cyan-glow);
+}
+
+.email-link {
+  color: var(--cyan-glow);
+  transition: opacity 0.2s;
+}
+
+.email-link:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.pipeline-control {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+}

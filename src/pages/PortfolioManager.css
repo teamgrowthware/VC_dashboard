@@ -1,0 +1,115 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.project-card {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.project-card:hover {
+  border-color: var(--border-glow);
+  box-shadow: 0 4px 20px rgba(0, 240, 255, 0.05);
+}
+
+.project-image-placeholder {
+  height: 140px;
+  background: var(--bg-deep);
+  border-bottom: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  font-size: 12px;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.status-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.status-badge.published {
+  background: rgba(0, 255, 170, 0.15);
+  color: var(--status-online);
+  border: 1px solid var(--status-online);
+}
+
+.status-badge.draft {
+  background: rgba(255, 184, 0, 0.15);
+  color: var(--status-warning);
+  border: 1px solid var(--status-warning);
+}
+
+.project-content {
+  padding: 16px;
+}
+
+.project-title {
+  font-size: 16px;
+  margin-bottom: 6px;
+  color: var(--text-primary);
+}
+
+.project-meta {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.tech-stack-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tech-tag {
+  background: rgba(0, 240, 255, 0.08);
+  color: var(--cyan-glow);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-family: var(--font-mono);
+  border: 1px solid rgba(0, 240, 255, 0.2);
+}
+
+.project-actions {
+  display: flex;
+  border-top: 1px solid var(--border-light);
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.action-btn {
+  flex: 1;
+  padding: 8px;
+  color: var(--text-muted);
+  border-radius: 4px;
+  transition: all 0.2s;
+  display: flex;
+  justify-content: center;
+}
+
+.action-btn:hover {
+  color: var(--cyan-glow);
+  background: rgba(0, 240, 255, 0.1);
+}
+
+.action-btn.danger:hover {
+  color: var(--status-offline);
+  background: rgba(255, 51, 102, 0.1);
+}
