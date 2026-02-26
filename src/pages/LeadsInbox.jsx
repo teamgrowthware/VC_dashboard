@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, Clock, CheckCircle, ArrowRight } from 'lucide-react';
+import { Mail, Clock, CheckCircle, ArrowRight, Inbox } from 'lucide-react';
 import './LeadsInbox.css';
 
 const mockLeads = [
